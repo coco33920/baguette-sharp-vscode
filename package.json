@@ -1,0 +1,25 @@
+{
+    "name": "baguette-sharp-support",
+    "displayName": "baguette#",
+    "description": "colorization of baguette sharp into VSC",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "baguette",
+            "aliases": ["Baguette#", "baguette"],
+            "extensions": [".baguette",".bag"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "baguette",
+            "scopeName": "source.baguette",
+            "path": "./syntaxes/baguette.tmLanguage.json"
+        }]
+    }
+}
