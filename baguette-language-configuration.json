@@ -1,0 +1,25 @@
+{
+    "comments": {
+      "lineComment": "//"
+    },
+    "brackets": [
+          ["CHOUQUETTE", "CLAFOUTIS"],
+          ["MUFFIN", "COOKIES"],
+          ["PARISBREST", "PARISBREST"]
+    ],
+    "autoClosingPairs": [
+        { "open": "CHOUQUETTE", "close": "CLAFOUTIS" },
+        { "open": "MUFFIN", "close": "COOKIES" },
+        { "open": "PARISBREST", "close": "PARISBREST", "notIn": ["string", "comment"] }
+    ],
+    "indentationRules": {
+          "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+          "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
+    },
+    "onEnterRules": [
+        {
+          "beforeText": "^\\s*(?:MUFFIN).*?:\\s*$",
+          "action": { "indent": "indent" }
+        }
+      ]
+}

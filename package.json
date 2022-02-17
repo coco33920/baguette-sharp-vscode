@@ -1,6 +1,7 @@
 {
     "name": "baguette-sharp-support",
     "displayName": "baguette#",
+    "icon": "icons/baguette-icon-128.png",
     "description": "colorization of baguette sharp into VSC",
     "version": "0.0.1",
     "engines": {
@@ -10,16 +11,29 @@
         "Programming Languages"
     ],
     "contributes": {
+        "iconThemes": [
+            {
+              "id": "baguette",
+              "label": "Baguette Sharp Icon",
+              "path": "./icons/baguette-icon.json"
+            }
+          ],
+
         "languages": [{
             "id": "baguette",
             "aliases": ["Baguette#", "baguette"],
             "extensions": [".baguette",".bag"],
-            "configuration": "./language-configuration.json"
+            "configuration": "./baguette-language-configuration.json"
+            
         }],
         "grammars": [{
             "language": "baguette",
             "scopeName": "source.baguette",
             "path": "./syntaxes/baguette.tmLanguage.json"
         }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coco33920/baguette-sharp-vscode"
     }
 }

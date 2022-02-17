@@ -7,26 +7,82 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#func"
+		},
+		{
+			"include": "#int"
+		},
+		{
+			"include": "#decimal"
+		},
+		{
+			"include": "#falsetrue"
+		},
+		{
+			"include": "#words"
+		},
+		{
+			"include": "#semicolon"
+		},
+		{
+			"include": "#comment"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.baguette",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(COOKIES|MUFFIN|SABLE|FRAMBOISIER|PAINVIENNOIS)\\b"
 			}]
 		},
 		"strings": {
 			"name": "string.quoted.double.baguette",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "PARISBREST",
+			"end": "PARISBREST",
 			"patterns": [
 				{
 					"name": "constant.character.escape.baguette",
 					"match": "\\\\."
 				}
 			]
+		},
+		"func": {
+			"name": "entity.name.function.baguette",
+			"match": "ICECREAM"
+		},
+		"int": {
+			"name": "constant.numeric.decimal.baguette",
+			"match": "-?\\d+"
+		},
+		"decimal": {
+			"name": "constant.numeric.decimal.baguette",
+			"match": "/^[+-]?([0-9]+\\.?[0-9]*|\\.[0-9]+)"
+		},
+		"point": {
+			"name": "constant.numeric.decimal.baguette",
+			"match": "\\."
+		},
+		"falsetrue":{
+			"name": "constant.language.boolean.baguette",
+			"match": "\\b(CUPCAKE|POPCAKE)\\b"
+		},
+		"words":{
+			"name":"constant.language.baguette",
+			"match": "\\b(PAINAUCHOCOLAT|PAINVIENNOIS|CROISSANT|MADELEINE|ECLAIR|CANELE|STHONORE|KOUGNAMANN|PROFITEROLE|FINANCIER|PAINAURAISIN|CHOCOLATINE|BRETZEL|BAGUETTEVIENNOISE|OPERA|MILLEFEUILLE|FRAISIER|QUATREQUART|TIRAMISU|MERINGUE|MERVEILLE|BRIOCHE|TARTE|FLAN|PAINDEPICE|CREPE|CHAUSSONAUXPOMMES|SABLE|CHOUQUETTE|CLAFOUTIS|PARISBREST)\\b"
+		},
+		"semicolon":{
+			"name": "variable.parameter.function.baguette",
+			"match": "BAGUETTE"
+		},
+		"comment":{
+			"name": "comment.block.baguette",
+			"begin": "//",
+			"end": "\\b($|^)"
 		}
 	},
+
+	
 	"scopeName": "source.baguette"
 }

@@ -1,0 +1,17 @@
+{
+	"iconDefinitions": {
+		"baguette": {
+			"iconPath": "./baguette-icon-128.png"
+		}
+	},
+
+	"fileExtensions": {
+        "baguette":"baguette",
+        "bag":"baguette"
+	},
+	
+	"languageIds": {
+        "baguette":"baguette"
+    }
+	
+}
