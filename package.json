@@ -1,5 +1,6 @@
 {
     "name": "baguette-sharp-support",
+    "publisher": "coco33920",
     "displayName": "baguette#",
     "icon": "icons/baguette-icon-128.png",
     "description": "colorization of baguette sharp into VSC",
